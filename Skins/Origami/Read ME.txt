@@ -1,0 +1,192 @@
+=====================|   ABOUT   |====================
+
+
+Origami
+
+a Rainmeter suite
+
+by VakiNakamura
+
+
+// that was supposed to be a haiku
+
+
+
+
+=====================|   SKINS   |====================
+
+
+Origami suite contains about 30 skins to choose from:
+
+
+> clock (3 variants: big analog, small analog and small digital)
+
+> dock
+
+> music player controller (4 variants: 'full and mini set' compatible with most players and 'full and mini set' dedicated for Spotify)
+
+> tray
+
+> user widget
+
+> CPU and RAM widgets
+
+> disk indicators (3 variants for each: left sided bar, right sided bar and square tile)
+
+> network widgets (separate for upload and download and shared)
+
+> IP widget
+
+> settings panel (see Customization - Settings for more info)
+
+> weather widget (2 variants: bar and tile)
+
+> Gmail widget (2 variants: bar and tile)
+
+	
+
+=====================|   INTERACTION   |====================
+
+
+Some of the skins can be interacted with:
+
+
+> Dock - click on the icon to execute bound app
+
+> Player - provides you track controls and volume controls. Click on the cover
+to open the music player.
+
+> User - click on the username to open a panel with additional info and task 
+manager action.
+
+> Disks - click on the bar to open the coresponding directory.
+
+> Settings - see below
+
+> Gmail - click on the color field to refresh the skin
+
+> Tray - click on any of the icons or time to bring up info panel
+
+
+
+
+=====================|   CUSTOMIZATION - SETTINGS  |===================
+
+
+All Origami skins can be easily customized by using the Settings skin. It allows you to change
+the colors of all widgets and set values for certain meters.
+
+
+To bring up the complete Settings panel, click the 'Origami' string. You can use it to hide the
+panel afterwards.
+
+
+To access any of the listed sections, click it with the left mouse button. Left click again to
+hide it.
+
+
+> SKINS - left click on skin name to toggle the skin (show / hide). Note that you must activate
+that skin first by putting it on desktop.
+
+
+> COLOR - click on any of available colors to set it as accent color for all skins. Note
+that not all skins use it (e.g. Network, IP, User).
+
+
+> DISKS - click the 'Disk X' label to set the letter for the disk wigdet. Disks 3 and 4 support 
+removable drives.
+
+
+> PLAYER - click the desired player name to make it work with music player widget. If you use
+the Spotify app, make sure to change the variant of music player controler to a Spotify dedicated
+one (right click on the skin - Variants).
+
+
+> DOCK - click on 2 first options to set the apps to launch and their icons. Left click on
+the color label to enable colorful icons. Right click to change their appearance to greyscale.
+
+
+> GMAIL - click on log in to bring up a separate file for your Gmail data.
+
+
+> WEATHER - click on the location code to input it. Left click on the units toggle
+to set Celsius degrees. Right click to change it the Fahrenheit degrees.
+
+
+> USER - click the avatar label to open the dedicated folder to place the image file with your
+avatar (any file name, any supported image format).
+
+
+> IP - left click to enable IP address display masking. Right click to disable it.
+
+
+
+
+=====================|   CUSTOMIZATION - REBUILDING  |===================
+
+
+Some of the bar shaped skins can be modified in their appearance. They are build from 3 blocks:
+
+
+left side - background - right side
+
+
+The left side and right side graphics are triangles which can be changed or removed by commenting
+(putting the ';' sign) their meters before the 'Meter=Image' strings.
+
+
+Example from the 'Disk 1 Left' skin:
+
+ 
+[RightSide4]
+Meter=Image
+ImageName=#@#Images/4.png
+X=125
+Y=0
+W=50
+H=50
+AntiAlias=1
+
+
+[RightSide2]
+;Meter=Image
+ImageName=#@#Images/2.png
+X=125
+Y=0
+W=50
+H=50
+AntiAlias=1
+
+
+By default the RightSide4 meter is visible and RightSide2 is hidden, resulting in displaying
+the 4.png graphics. To change it to 2.png, comment the RightSide4 and uncomment the RightSide2.
+To hide both of them (e.g. in order to put the skin on the side of the desktop), comment both
+meters. This method applies to all skins utilizing these graphics.
+
+
+=====================|   CREDITS   |====================
+
+
+MerlinTheRed for his 'plain weather icons'
+http://fav.me/d2lkj4g
+
+
+dAKirby309 for the 'Metro UI Icon Set - 725 Icons'
+http://fav.me/d4n4w3q
+
+
+
+
+=====================|   CHANGELOG   |====================
+
+
+- v1.0
++ first release
+
+
+
+
+
+
+All rights reserved
+VakiNakamura @deviantART
